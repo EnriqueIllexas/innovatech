@@ -26,14 +26,14 @@
     background: var(--gris);
 }
 ::-webkit-scrollbar-thumb{
-    background: linear-gradient(blue, #555EE1, #02FFD9);
+    background: linear-gradient(rgb(115, 0, 255), #55b2e1, #9fd6ff);
     transition: 1s;
     border-radius: 100vw;
 }
-::-webkit-scrollbar-thumb:hover{
+/*::-webkit-scrollbar-thumb:hover{
     background: linear-gradient(#555EE1, #02FFD9);
     transition: 1s;
-}
+}*/
 :root {
     --colorPrimario: #000;
     --colorSecundario: #fff;
@@ -53,7 +53,7 @@ header{
     justify-content: space-around;
     transition: 0.7s;
     z-index: 10;
-    background-color: rgba(255, 255, 255, 0.519);
+    background-color: rgba(255, 255, 255, 0.771);
 }
 header.abajo{
     background: #282828;
@@ -86,34 +86,26 @@ header p{
 header.abajo p{
     color:#fff;
 }
-nav{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
 header ul{
     position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 5px;
 }
 
 header ul li{
     list-style: none;
     width: 16%;
+    border-left: 1px solid #c3c3c3;
+    gap: 5px;
 }
 
 header ul li a{
     position: relative;
     font-family: helvetica;
-    margin: 0 15px;
+    margin: 0 20px;
     text-decoration: none;
     color: #282828;
-    letter-spacing: 2px;
-    font-weight: 600;
-    transition: 0.7s;
 }
 header.abajo ul li a{
     color:#fff;
@@ -170,17 +162,9 @@ header.abajo .button-nav{
     overflow:visible;
     padding: 20px;
 }
-.main-primary:hover{
-    border-radius: 15px;
-    transform: scale(1.1);
-    box-shadow:  20px 20px 60px #6b6b6b52,
-    -20px -20px 60px #00000067;
-    transition: 1s;
-    border: 1px solid var(--colorSecundario);
-}
 .main-primary h1{
     color: var(--colorSecundario);
-    font-size: 5.4rem;
+    font-size: 5.5rem;
     font-weight: bolder;
     font-family: Arial, Helvetica, sans-serif;
     padding: 20px;
@@ -191,24 +175,29 @@ header.abajo .button-nav{
     font-family: Arial, Helvetica, sans-serif;
     color: rgb(197, 197, 197);
     font-weight: 200;
-    font-size: 18px;
+    font-size: 20px;
     overflow: hidden;
     text-overflow:ellipsis;  
     width: 100%;
     padding: 0;
+    letter-spacing: 1px;
 }
 .main-primary button{
     padding: 5% 20%;
-    border: 1px solid #FFF;
+    border: none;
     color: wheat;
     border-radius: 15px;
-    background: linear-gradient(90deg, #1a1a1a14 4.69%, #555EE1 80%);
-    font-size: 1rem;
-    font-weight: bolder;
+    background: linear-gradient(90deg, #1a1a1a14 1.69%, #555EE1 80%);
     font-family: Arial, Helvetica, sans-serif;
-    left: 0;
-    margin: 0;
-    
+    font-size: 1.4rem;
+    margin-top: 20px;
+    text-align: center;
+    transition: 1s;
+}
+.main-primary button:hover{
+    border: 1px solid #ffffff89;
+    transform: scale(1.05);
+    transition: 1s;
 }
 .secction-main-secondary{
     width: 40%;
@@ -332,8 +321,8 @@ header.abajo .button-nav{
     margin: 0;
     margin-top: 12%;
     transition: 1s;
-    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0, 0, 0, 0.873)),url(https://images.pexels.com/photos/9300768/pexels-photo-9300768.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
     object-fit: cover;
+    margin-bottom: 50px;
     
 }
 .que-ofrecemos-list img{
